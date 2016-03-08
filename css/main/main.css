@@ -1,0 +1,146 @@
+body {
+  font-size: 14px;
+  width: 960px;
+  positition: relative;
+  line-height: 14px;
+  margin: 0 auto;
+  background: url("/images/diagonal_striped_brick.png"); }
+	
+* {
+  box-sizing: border-box; }
+
+.row_content::after, .row_content::before {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0; }
+.ng-binding{
+	
+	text-transform: capitalize;
+}
+.page_name {
+  position: absolute;
+  right: 200px;
+  top: 15px;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #fff; }
+
+.search-form {
+  margin: 40px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: inline-block; }
+  .search-form input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000; }
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  position: relative; }
+  .navbar .navbar-nav li {
+    display: inline-block;
+    padding: 30px 20px;
+    margin-right: 20px; }
+    .navbar .navbar-nav li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+ng-view {
+  display: block;
+  padding: 10px 20px; }
+
+.content {
+  position: relative;
+  margin: 0 auto; }
+  .content .row_content {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center; }
+    .content .row_content .pic-wrap {
+      display: block;
+      float: left;
+      width: 33.3%;
+      margin-bottom: 40px;
+      position: relative; }
+      .content .row_content img {
+        width: 80%;
+        height: 300px;
+        border-radius: 5px;
+        position: relative;
+        border: 2px solid black;
+        background: linear-gradient(to top, yellow 47%, blue 50%);
+        font-size: 20px;
+        color: yellow;
+        text-transform: uppercase;
+        line-height: 2;
+        display: block;
+        margin: 0 auto; }
+      
+      .content .row_content .pic-wrap-detail img{
+      	height: 400px;
+      	width: 800px;
+      	margin-top: 30px;
+
+      }  
+      .content .row_content .pic-wrap .image-content{
+      	
+      	margin: -5px auto 0;
+      	position: relative;
+      } 
+      .content .row_content .pic-wrap .name-image  {
+			background: #000;
+			color: white;
+			font-size: 16px;
+			line-height: 20px;
+			height: 50px;
+			border-radius: 5px;
+			width: 300px;
+			text-transform: capitalize;
+      }
+      .content .row_content .pic-wrap .wrap-link{
+      	display: inline-block;
+      	
+      }
+      .content .row_content .pic-wrap .wrap-link .link{
+			display: inline-block;
+      	color: #000;
+      	font-size: 16px;
+      	font-weight: 600;
+      	padding: 15px;
+      	text-decoration: none;
+      	text-transform: uppercase;
+      	margin-top: 5px;
+			border: 2px solid black
+      }
+
+
+      
+      
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right top, white, #3b3b3b, #b5b5b6) repeat scroll 0 0;
+  padding: 20px;
+  width: 960px; }
+  footer .wrap_down {
+    line-height: 2; }
+    footer .wrap_down .work-by {
+      float: left;
+      font-size: 20px;
+      display: inline-block; 
+   	font-weight: 700;}
+    footer .wrap_down .social {
+      float: right;
+      display: inline-block; }
+
+/*# sourceMappingURL=app.css.map */

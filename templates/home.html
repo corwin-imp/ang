@@ -1,0 +1,42 @@
+
+<h1 class="page_name">home page</h1>
+</div>
+</nav>
+<div  class="content">
+  
+	<form class="search-form">
+	  <h1> {{images.length}} Pictures</h1>
+	  <input type="text" class="search" 
+	  placeholder="Search..." ng-model="search">
+	</form>
+  <div ng-controller='ImagesListCtrl' class="row_content" >
+      
+ 
+
+<div lazy-scroll="listData()" lazy-scroll-trigger="50">
+
+{{ images | json }}
+   <<!-- div ng-repeat="image in images | filter:search" class="pic-wrap">
+     <img alt="{{image.id}}" ng-src="{{ image.url }}">
+      
+    <table class="image-content">
+    <tr class="name-image-row">
+      <td class="name-image">
+        {{ image.title }}
+      </td>
+    </tr>
+    <tr class="wrap-link">
+    <td>
+      <a class="link" href="#/images/{{ image.id }}" role="button">picture</a>
+      <a class="link"  href="#/images/albums/{{ image.albumId }}" role="button">album</a>
+    </td>
+    </tr>
+     </table>
+   
+      
+   </div>  -->
+</div>
+
+
+  </div>
+</div>

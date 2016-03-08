@@ -1,0 +1,30 @@
+<h1 class="page_name"> Album {{ imageAlbumId }}</h1>
+
+<div class="content">
+  
+	<form class="search-form">
+	  <h1> {{album_images.length}} images</h1>
+	  <input type="text" class="search" 
+	  placeholder="Search..." ng-model="search">
+	</form>
+	  <div class="row_content">
+	    <div ng-repeat="album_image in album_images | filter:search" class="pic-wrap">
+	      <img alt="{{ album_image.title }}" ng-src="{{ album_image.url }}" >
+			<table class="image-content">
+				<tr class="name-image-row">
+					<td class="name-image">
+						{{ album_image.title }}
+					</td>
+				</tr>
+				<tr class="wrap-link">
+				<td>
+					<a class="link" href="#/images/{{ album_image.id }}" role="button">picture</a>
+				</td>
+				</tr>
+			</table>
+
+	     
+	      
+	    </div>   
+	  </div>
+</div>

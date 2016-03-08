@@ -1,0 +1,21 @@
+<h1 class="page_name">popular Users</h1>
+
+
+<div class="content">
+  
+<form class="search-form">
+  <h1> {{users.length}} users</h1>
+  <input type="text" class="search" 
+  placeholder="Search..." ng-model="search">
+</form>
+  <div class="row_content">
+    <div ng-repeat="user in users | filter:search" 
+    class="pic-wrap">
+      <img alt="{{ user.name }}" >
+          <div class="wrap-link">
+          
+          </div>
+    </div>
+      
+  </div>
+</div>
